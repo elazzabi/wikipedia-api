@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Wikipedia - Search</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+			<div class="wikipedia">
+				<i class="fa fa-wikipedia-w"></i>
+			</div>
+			<p class="random-text">Too lazy to type? Get a <span><a class="random" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">random</a></span> article</p>
+			<div class="search">
+				<input type="text" id="search-box" placeholder="What are you looking for?">
+				<input type="submit" id="submit-button" class="btn btn-primary" value="OK" />
+			</div>
+			<div class="result"></div>
+			<div class="error-card empty-search-box">
+				<p class="error-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></p>
+				<p class="error-snippet">Looks like there is nothing in the search box</p>
+			</div>
+			<div class="error-card failure">
+				<p class="error-title"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></p>
+				<p class="error-snippet">Something is broken dude! Please try again!</p>
+			</div>
+		<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
