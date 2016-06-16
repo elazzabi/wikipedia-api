@@ -18,7 +18,7 @@ $('#submit-button').on('click', function(){
 		for(result in search_results) {
 			var title = "<a class=\"card-title\" href=\"https://en.wikipedia.org/wiki/" + search_results[result].title + "\" target=\"_blank\">" + search_results[result].title + "</a>"
 			var snippet = "<p class=\"card-snippet\">" + search_results[result].snippet + "</p>"
-			var div = "<div class=\"result-card\">" + title + snippet + "</div>"
+			var div = "<div class=\"card result-card\">" + title + snippet + "</div>"
 			$(".result").append(div)
 		}
 
